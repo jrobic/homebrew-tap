@@ -2,20 +2,20 @@
 class Bouncer < Formula
   desc "Guard coding-agent tool calls with declarative policy"
   homepage "https://github.com/jrobic/agent-bouncer"
-  version "1.1.0"
+  version "1.1.2"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/jrobic/agent-bouncer/releases/download/v1.1.0/bouncer-1.1.0-darwin-arm64.tar.gz"
-      sha256 "35fafcbb4adde87ba38cdccf7f19bc91e601274ef308ad27813974ca783daa4f"
+      url "https://github.com/jrobic/agent-bouncer/releases/download/v1.1.2/bouncer-1.1.2-darwin-arm64.tar.gz"
+      sha256 "82835fd60396fdf4bdecd1a14494f01447c680f5b1e1851fbe1df93ae1d31573"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/jrobic/agent-bouncer/releases/download/v1.1.0/bouncer-1.1.0-linux-x64.tar.gz"
-      sha256 "6099f9b5a5c92936052dee457df68c3d5b30cdbe976d0b68131e3cc975c388de"
+      url "https://github.com/jrobic/agent-bouncer/releases/download/v1.1.2/bouncer-1.1.2-linux-x64.tar.gz"
+      sha256 "c84423f38f1b51052360bc424e998ad609c50d809b3f8292159ceb6c303847c0"
     end
   end
 
@@ -23,7 +23,7 @@ class Bouncer < Formula
     bin.install "bouncer"
   end
 
-  caveats do
+  def caveats
     <<~EOS
       bouncer is installed at #{HOMEBREW_PREFIX}/bin/bouncer. Wire that path,
       never the Cellar path, into your harness (`bouncer doctor` checks it).
