@@ -2,20 +2,20 @@
 class Bouncer < Formula
   desc "Guard coding-agent tool calls with declarative policy"
   homepage "https://github.com/jrobic/agent-bouncer"
-  version "1.2.0"
+  version "1.3.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/jrobic/agent-bouncer/releases/download/v1.2.0/bouncer-1.2.0-darwin-arm64.tar.gz"
-      sha256 "09d91006162fccc31a81f916265b02bf24f25a5410fa6e928aa78da9e34ce04a"
+      url "https://github.com/jrobic/agent-bouncer/releases/download/v1.3.0/bouncer-1.3.0-darwin-arm64.tar.gz"
+      sha256 "d259c9646329d4c264aa987efbe8e33e3f2bed9dc4a129f34ff4213cfa9633fb"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/jrobic/agent-bouncer/releases/download/v1.2.0/bouncer-1.2.0-linux-x64.tar.gz"
-      sha256 "234471ab14f3eeae90039bd9afa4f74dc0b81b91dcd13494f43b7ca2b394bec3"
+      url "https://github.com/jrobic/agent-bouncer/releases/download/v1.3.0/bouncer-1.3.0-linux-x64.tar.gz"
+      sha256 "0797b6217aa9f91980cc93c325f92e557e2da835f4ba278c3910969b7ab792f3"
     end
   end
 
@@ -31,6 +31,7 @@ class Bouncer < Formula
       Homebrew that path changes on upgrade. Export
       BOUNCER_BIN=#{HOMEBREW_PREFIX}/bin/bouncer in your shell, or reprint the
       extension after each upgrade (`bouncer harness shim pi-agent`).
+      The bouncer-policy skill is printed by `bouncer skill policy`; reprint it after each upgrade.
     EOS
   end
 
