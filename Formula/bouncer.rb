@@ -2,20 +2,20 @@
 class Bouncer < Formula
   desc "Guard coding-agent tool calls with declarative policy"
   homepage "https://github.com/jrobic/agent-bouncer"
-  version "1.4.0"
+  version "1.5.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/jrobic/agent-bouncer/releases/download/v1.4.0/bouncer-1.4.0-darwin-arm64.tar.gz"
-      sha256 "6a0e49e9729ad5c8401c31128302906682e0ee14602738337e292a9a68784176"
+      url "https://github.com/jrobic/agent-bouncer/releases/download/v1.5.0/bouncer-1.5.0-darwin-arm64.tar.gz"
+      sha256 "f3780b51fbd84edb0308c574999a0dfe52eb90482a69b5a8b4968c54e50b6d6e"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/jrobic/agent-bouncer/releases/download/v1.4.0/bouncer-1.4.0-linux-x64.tar.gz"
-      sha256 "ec2b98a7682042f2e633a2dd999f20669213df936df80ec7164036ed89f12046"
+      url "https://github.com/jrobic/agent-bouncer/releases/download/v1.5.0/bouncer-1.5.0-linux-x64.tar.gz"
+      sha256 "24c4e595b1cd6068186fac765a8d439e436ec8f1dacddfedca5277d388b4e77f"
     end
   end
 
